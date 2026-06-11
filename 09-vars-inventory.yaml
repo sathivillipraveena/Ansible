@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   tasks: 
-    - name: variables
-      ansible.builtin.debug:
+   - name: variables
+     ansible.builtin.debug:
         msg: "I'm learning {{course}} with a duration of {{duration}} trained by {{trainer}}"
   
