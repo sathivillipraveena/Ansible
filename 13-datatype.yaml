@@ -2,13 +2,13 @@
   hosts: local
   connection: local
   vars:
-  COURSE: "Devops with AWS" # string datatype
-  DURATION: 10 #number'
-  IS_LIVE: true #boolean
-  TOOLS: #List
-   - shell
-   - Linux
-   - Ansible
+   COURSE: "Devops with AWS" # string datatype
+   DURATION: 10 #number'
+   IS_LIVE: true #boolean
+   TOOLS: #List
+    - shell
+    - Linux
+    - Ansible
   CONCEPTS: #maps or dictionary
     CI: Jenkins
     SCRIPTING: "Shell, Ansible, Terraform, Python"
