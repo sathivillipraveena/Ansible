@@ -6,3 +6,4 @@
       ansible.builtin.debug:
         msg: "I'm learning {{Course}} with a duration of {{Duration}} trained by {{Trainer}}"
   
+#ansible-playbook -i inventory.ini 11.vars-args.yaml -e "Course=devops" -e "Duration=100hr" -e "Trainer=Shiva" pass this way to execute this
