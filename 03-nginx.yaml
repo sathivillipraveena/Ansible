@@ -1,5 +1,6 @@
 - name: nginx installation
-  hosts: frontend
+  hosts: local
+  connection: localS
   become: yes
   tasks:
     - name: installation of nginx
