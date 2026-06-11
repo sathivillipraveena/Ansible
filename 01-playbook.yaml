@@ -1,5 +1,11 @@
 - name: checking if the playbook works
-  hosts: 
-  connection:
+  hosts: local
+  connection: local
   tasks:
-  - name: 
+    - name: this is playbook1
+      ansible.builtin.debug:
+       msg: "this is just 1st play"
+  
+    - name: this is playbook2
+      ansible.builtin.debug:
+        msg: "this is 2nd play"
