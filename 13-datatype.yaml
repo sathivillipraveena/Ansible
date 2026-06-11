@@ -9,7 +9,7 @@
     - shell
     - Linux
     - Ansible
-  CONCEPTS: #maps or dictionary
+   CONCEPTS: #maps or dictionary
     CI: Jenkins
     SCRIPTING: "Shell, Ansible, Terraform, Python"
   tasks:
