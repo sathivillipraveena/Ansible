@@ -1,0 +1,15 @@
+- name: playbook variables
+  hosts: local
+  connection: local
+  vars:
+    number: 1200
+  tasks: 
+    - name: variables
+      ansible.builtin.debug:
+        msg: "the number{{number}} is less than 2000"
+      when: number<2000
+      
+    - name: greater than 
+      ansible.builtin.debug:
+        msg: "the number {{number}} is greatewr than 2000"
+      when: number>2000  
