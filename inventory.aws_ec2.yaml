@@ -1,10 +1,20 @@
 plugin: amazon.aws.aws_ec2 # plugins used to connect aws in the region us-east-1
 regions:
 - us-east-1
+
+keyed_groups: 
+- Key: tags.Name #dynamic-frontend
+# This creates host groups based on architecture.
+- prefix: "dynamic"
+  separator: "-"
+
 filters:
   tag:Name: frontend
   instance-state-name: running # fetches the instances named frontend which are running along with their ip address
+
 hostnames:
-  - ip-address #fetch ip address
+  - ip-address #fetch public ip address
+  - private_ip_address # fetches private ip address
+
 compose:
   ansible_host: private_ip_address
