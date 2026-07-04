@@ -1,5 +1,5 @@
 - name: create ec2 and r53 records
-  hosts: instances
+  hosts: instance
   connection: local
   vars:
     instances:
